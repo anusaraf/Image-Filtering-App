@@ -1,0 +1,562 @@
+﻿<!DOCTYPE html>
+
+<html lang="en"xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link  href="about.php" />
+    <title>
+        Online Image Effect
+    </title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style=" font-size:12px; font-weight:bold; text-transform:uppercase;">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="abouts.php">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <h6 class="blow"> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Create Amazing Effects with a Single Click</h6>
+                    
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+
+
+
+   <div class="container-fluid " style="align-items:center;" >
+       <div class="jumbotron" style="   align-items:center;">
+           <div class="row">
+               
+
+               <div class=" col-md-7 m-auto text-right">
+                   <div class="box" style="align-items:center;">
+                       <span style="--i:1;"><img src="map.jpg"></span>
+                       <span style="--i:2;"><img src="rud.jpg"></span>
+                       <span style="--i:3;"><img src="anshu.jpg"></span>
+                       <span style="--i:4;"><img src="img2-edited.jpg"></span>
+                       <span style="--i:5;"><img src="img3.jpg"></span>
+                       <span style="--i:6;"><img src="img4.jpg"></span>
+                       <span style="--i:7;"><img src="img4-edited.jpg"></span>
+                       <span style="--i:8;"><img src="img5.jpg"></span>
+                      <span style="--i:9;"><img src="img6.jpg"></span>
+                 
+
+
+                   </div>
+
+</div>
+</div>
+               </div>
+           </div>
+
+
+
+
+    
+
+
+
+
+    
+
+
+   <div class="container-fluid pt-2 my-3" style="        background: linear-gradient(90deg,#0094ff,#ff006e);">
+       <h1 class="glow">Amazing Online Photo Filter Editor</h1>
+
+
+
+
+
+
+
+
+
+
+       <br />
+
+       <br />
+
+
+
+       <div class="row">
+           <div class="col-md-1  text-left">
+
+               <aside>
+                   <h2 class="blow">
+                       Filter
+                 </h2>
+                   <br />
+
+
+
+                   <br />
+                   <form id="slider-form">
+                       <p>
+                           <label for="gs">Grayscale</label>
+                           <input id="gs" name="gs" type="range" min="0" max="100"
+                                  value="0" class="slider" />
+
+
+
+                       </p>
+
+
+
+                       <p>
+                           <label for="blur">Blur</label>
+                           <input id="blur" name="blur" type="range" min="0" max="100"
+                                  value="0" class="slider" />
+                       </p>
+
+
+
+                       <p>
+                           <label for="hue-rotate">Huerotate</label>
+                           <input id="hue-rotate" name="hue-rotate" type="range" min="0" max="100"
+                                  value="0" class="slider" />
+                       </p>
+
+
+                       <p>
+                           <label for="sepia">Sepia</label>
+                           <input id="sepia" name="sepia" type="range" min="0" max=""
+                                  value="0" class="slider" />
+                       </p>
+
+
+                   </form>
+
+
+
+
+               </aside>
+
+           </div>
+
+
+           <div class="col-md-8 m-auto   text-right">
+               <div class="row">
+                   <div class="custom-file mb-3">
+                       <input type="file" class="custom-file-input"
+                              id="upload-file">
+                       <label for="upload-file"
+                              class="custom-file-label ">
+
+                       </label>
+
+
+                   </div>
+
+
+                   <canvas id="canvas"></canvas>
+
+
+               </div>
+
+           </div>
+
+
+
+       </div>
+
+       <br />
+
+
+       <br />
+
+
+
+
+
+
+      <h2 class="blow">
+           Effects
+      </h2>
+
+       <br> </br>
+       <div class="button">
+           <div class="row md-3">
+
+               <div class="col-md-2">
+                   <button class="filter-btn vintage-add btn  btn-block" style="background: linear-gradient(60deg, #0026ff, #ff00dc);">
+                       Vintage
+                   </button>
+
+               </div>
+
+
+
+               <div class="col-md-2">
+                   <button class="filter-btn lomo-add btn btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);">
+                       Lomo
+                   </button>
+
+               </div>
+
+
+
+               <div class="col-md-2">
+                   <button class="filter-btn nostalgia-add btn btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Nostalgia </button>
+
+               </div>
+
+               <div class="col-md-2">
+                   <button class="filter-btn clarity-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Clarity </button>
+
+               </div>
+
+
+               <div class="col-md-2">
+                   <button class="filter-btn crossprocess-add btn   btn-block " style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Cross Process </button>
+
+               </div>
+
+
+
+               <div class="col-md-2">
+                   <button class="filter-btn pinhole-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Pinhole </button>
+
+               </div>
+
+
+
+
+
+
+           </div><!-- ./ row -->
+       </div>
+       <br />
+
+
+       <div class="row md-3">
+
+
+           <div class="col-md-2">
+               <button class="filter-btn hazyDays-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Hazy </button>
+
+
+           </div>
+
+
+           <div class="col-md-2">
+               <button class="filter-btn herMajesty-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Her Majesty</button>
+
+
+           </div>
+
+
+           <div class="col-md-2">
+               <button class="filter-btn sinCity-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Sin City</button>
+           </div>
+
+           <div class="col-md-2">
+               <button class="filter-btn love-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Love </button>
+
+           </div>
+
+
+           <div class="col-md-2">
+               <button class="filter-btn sunrise-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Sunrise </button>
+
+           </div>
+
+           <div class="col-md-2">
+               <button class="filter-btn grungy-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Grungy </button>
+           </div>
+
+
+       </div><!-- ./ row -->
+
+
+       <br />
+       <div class="row md-3">
+
+
+
+       </div>
+       <br />
+
+
+       <div class="row md-3">
+
+           <div class="col-md-2">
+               <button class="filter-btn jarques-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Jarques </button>
+
+           </div>
+
+           <div class="col-md-2">
+               <button class="filter-btn glowingsun-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Glowing Sun </button>
+
+           </div>
+
+
+           <div class="col-md-2">
+               <button class="filter-btn orangePeel-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Orange Peel </button>
+
+           </div>
+
+           <div class="col-md-2">
+               <button class="filter-btn posterize-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Posterize </button>
+
+           </div>
+
+           <div class="col-md-2">
+               <button class="filter-btn radialBlur-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> RadialBlur </button>
+
+           </div>
+
+           <div class="col-md-2">
+               <button class="filter-btn emboss-add btn btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> Emboss </button>
+
+           </div>
+
+
+       </div>
+
+       <br />
+
+
+
+       <div class="row md-3">
+
+
+           <div class="col-md-2">
+               <button class="filter-btn oldBoot-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> OldBoot </button>
+
+           </div>
+           <div class="col-md-2">
+               <button class="filter-btn edgeEnhance-add btn  btn-block" style="        background: linear-gradient(60deg, #0026ff, #ff00dc);"> EdgeEnhance </button>
+
+           </div>
+
+       </div>
+
+
+
+
+
+
+       <div class="row my-5">
+           <div class="col-md-4">
+
+               <button id="download-btn" class="btn  btn-block" style="background: #ff0000; border-radius: 4px; padding: 15px 15px; letter-spacing: 13px;">Download   Image</button>
+
+           </div>
+
+           <div class="col-md-4">
+
+               <button id="revert-btn" class="btn  btn-block" style="background: #4cff00; border-radius: 4px; padding: 15px 15px; letter-spacing:13px;">Remove   Filter</button>
+
+           </div>
+
+
+
+       </div>
+
+
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.0.0/caman.full.min.js"></script>
+       <script src="https://unpkg.com/konva@7.0.3/konva.min.js"></script>
+
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/camanjs/4.1.2/caman.full.min.js"></script>
+       <script src="main.js "></script>
+
+       <!--   <script src="caman-4.1.2.full.min.js"></script>
+    <script src="caman.full.min.js"></script>
+     -->
+
+
+
+    <!-- <div class="row my-5">
+
+          <h2 class="blow">
+               Crop Image 
+           </h2>
+           </br>
+           <div class="row my-5">
+           
+           <input type="text" id="one" placeholder="weight" /> <input type="text" id="two" placeholder="height" />
+           <br>
+           <input type="text" id="three" placeholder="x value" />
+           <input type="text" id="four" placeholder="y value" />
+
+         
+
+
+           <button onclick="canone()" id="crop" class="btn" style="  background: linear-gradient(60deg, #0026ff, #ff00dc);">preview</button>
+           <button onclick="cantwo()" id="cr" class="btn " style=" background: linear-gradient(60deg, #0026ff, #ff00dc);">crop </button>
+ </div> 
+</div>
+
+        -->
+
+
+  <div class="row my-3">
+
+ <h2 class="blow">
+               Change image size over an image
+           </h2>
+<div class="row my-5">
+
+           <button type="button" onclick="canfive() id="ad" class="btn">SIZE 1</button>
+               <br>
+    
+           <button type="button" onclick="canfour()" id="th" class="btn">SIZE 2</button>
+            <br>
+           <button type="button" onclick="ab()" id="abs" class="btn">SIZE 3</button>
+           
+
+           
+
+
+
+           
+       </div>
+
+       
+   </div>
+
+   </body>
+
+
+
+
+
+
+
+
+
+
+    <footer class="page-footer font-large  light-3 bg-success pt-4" >
+
+        
+        <div class="container-fluid">
+
+          
+            <div class="row">
+
+                
+                <div class="col-lg-2 col-md-12 mb-4">
+
+                    
+                    <div class="view overlay z-depth-1-half">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="img-fluid"
+                             alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+
+                   
+                    <div class="view overlay z-depth-1-half">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid"
+                             alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+
+                    
+                    <div class="view overlay z-depth-1-half">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="img-fluid"
+                             alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+               
+                <div class="col-lg-2 col-md-12 mb-4">
+
+                    
+                    <div class="view overlay z-depth-1-half">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg" class="img-fluid"
+                             alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+
+                    
+                    <div class="view overlay z-depth-1-half">
+                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(82).jpg" class="img-fluid"
+                             alt="">
+                        <a href="">
+                            <div class="mask rgba-white-light"></div>
+                        </a>
+                    </div>
+
+                </div>
+                
+                <div class="col-lg-2 col-md-6 mb-4">
+
+
+                    <h5>Website Developer</h5>
+                    <img src="imgcon.png" style="image-orientation:inherit;" />
+                    <br />
+                    <h5><b>Anushri Saraf</b></h5>
+                    <h5><small>anushrisaraf30@gmail.com</small></h5>
+
+                </div>
+            
+
+        </div>
+      
+        <div class="footer-copyright text-center py-3">
+            © 2020 Copyright:
+            <a href="http://localhost/imageffect/index.html"> OnlineFilterImage.com</a>
+        </div>
+      
+
+    </footer>
+   
+
+      
+
+
+
+
+
+
+
+
+
+
+</html>
